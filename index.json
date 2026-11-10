@@ -1,0 +1,52 @@
+{
+	"count": 8,
+	"scripts": [
+		{
+			"path": "README.md",
+			"url": "https://reduck.ai/use-cases/walmart-mcp",
+			"lastmod": "2026-10-27"
+		},
+		{
+			"address": "@reduck/walmart.com/add_to_cart",
+			"path": "scripts/walmart.com/add_to_cart.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/add_to_cart",
+			"lastmod": "2026-10-27"
+		},
+		{
+			"address": "@reduck/walmart.com/checkout_cart",
+			"path": "scripts/walmart.com/checkout_cart.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/checkout_cart",
+			"lastmod": "2026-10-27"
+		},
+		{
+			"address": "@reduck/walmart.com/get-product-reviews",
+			"path": "scripts/walmart.com/get-product-reviews.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/get-product-reviews",
+			"lastmod": "2026-10-22"
+		},
+		{
+			"address": "@reduck/walmart.com/get-product",
+			"path": "scripts/walmart.com/get-product.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/get-product",
+			"lastmod": "2026-10-22"
+		},
+		{
+			"address": "@reduck/walmart.com/list_cart_items",
+			"path": "scripts/walmart.com/list_cart_items.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/list_cart_items",
+			"lastmod": "2026-10-27"
+		},
+		{
+			"address": "@reduck/walmart.com/remove_from_cart",
+			"path": "scripts/walmart.com/remove_from_cart.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/remove_from_cart",
+			"lastmod": "2026-10-27"
+		},
+		{
+			"address": "@reduck/walmart.com/search-products",
+			"path": "scripts/walmart.com/search-products.md",
+			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/search-products",
+			"lastmod": "2026-10-22"
+		}
+	]
+}
