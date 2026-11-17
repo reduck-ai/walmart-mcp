@@ -34,7 +34,7 @@
 			"address": "@reduck/walmart.com/list_cart_items",
 			"path": "scripts/walmart.com/list_cart_items.md",
 			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/list_cart_items",
-			"lastmod": "2026-10-27"
+			"lastmod": "2026-11-16"
 		},
 		{
 			"address": "@reduck/walmart.com/remove_from_cart",

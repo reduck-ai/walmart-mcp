@@ -1,10 +1,10 @@
 # List Walmart cart items
 
-Automatically list Walmart cart items on walmart.com. List the items in your Walmart.com cart: for each line its item id, name, quantity, unit price, line total, seller and availability, plus the cart's item count and subtotal, and whether the cart belongs to a signed-in account or to this browser's guest cart. An empty cart returns an empty list. Saved-for-later items are not included. Walmart sometimes refuses automated visits with its "Robot or human?" check; the run then fails saying so, and it usually clears after a pause.
+Automatically list Walmart cart items on walmart.com. List the items in your Walmart.com cart: for each line its item id, name, quantity, unit price, line total, seller and availability, plus the cart's item count and subtotal, and whether the cart belongs to a signed-in account or to this browser's guest cart. An empty cart returns an empty list. Saved-for-later items are not included. When Walmart refuses the visit, the run fails saying so; retry later.
 
 - Site: walmart.com
 - Address: `reduck/walmart.com/list_cart_items`
-- Updated: 2026-10-27 (v2)
+- Updated: 2026-11-16 (v3)
 - Author: Reduck AI (reduck)
 
 ## Run it
@@ -30,7 +30,7 @@ It takes no input.
 
 ### What does "List Walmart cart items" do?
 
-List the items in your Walmart.com cart: for each line its item id, name, quantity, unit price, line total, seller and availability, plus the cart's item count and subtotal, and whether the cart belongs to a signed-in account or to this browser's guest cart. An empty cart returns an empty list. Saved-for-later items are not included. Walmart sometimes refuses automated visits with its "Robot or human?" check; the run then fails saying so, and it usually clears after a pause.
+List the items in your Walmart.com cart: for each line its item id, name, quantity, unit price, line total, seller and availability, plus the cart's item count and subtotal, and whether the cart belongs to a signed-in account or to this browser's guest cart. An empty cart returns an empty list. Saved-for-later items are not included. When Walmart refuses the visit, the run fails saying so; retry later.
 
 ### How do I automatically list Walmart cart items on walmart.com?
 
