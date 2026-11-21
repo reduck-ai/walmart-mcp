@@ -4,7 +4,7 @@ Automatically add Walmart product to cart on walmart.com. Add a product to your 
 
 - Site: walmart.com
 - Address: `reduck/walmart.com/add_to_cart`
-- Updated: 2026-10-27 (v2)
+- Updated: 2026-11-20 (v4)
 - Author: Reduck AI (reduck)
 
 ## Run it

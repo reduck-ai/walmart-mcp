@@ -10,13 +10,13 @@
 			"address": "@reduck/walmart.com/add_to_cart",
 			"path": "scripts/walmart.com/add_to_cart.md",
 			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/add_to_cart",
-			"lastmod": "2026-10-27"
+			"lastmod": "2026-11-20"
 		},
 		{
 			"address": "@reduck/walmart.com/checkout_cart",
 			"path": "scripts/walmart.com/checkout_cart.md",
 			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/checkout_cart",
-			"lastmod": "2026-10-27"
+			"lastmod": "2026-11-20"
 		},
 		{
 			"address": "@reduck/walmart.com/get-product-reviews",
@@ -40,13 +40,13 @@
 			"address": "@reduck/walmart.com/remove_from_cart",
 			"path": "scripts/walmart.com/remove_from_cart.md",
 			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/remove_from_cart",
-			"lastmod": "2026-10-27"
+			"lastmod": "2026-11-20"
 		},
 		{
 			"address": "@reduck/walmart.com/search-products",
 			"path": "scripts/walmart.com/search-products.md",
 			"url": "https://reduck.ai/explore/scripts/reduck/walmart.com/search-products",
-			"lastmod": "2026-10-22"
+			"lastmod": "2026-11-20"
 		}
 	]
 }

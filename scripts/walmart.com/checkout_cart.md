@@ -1,10 +1,10 @@
 # Check out Walmart cart
 
-Automatically check out Walmart cart on walmart.com. Check out your Walmart.com cart up to the review page, without ordering. It uses the account's preselected shipping address and saved payment method, confirming the address when Walmart asks for it, and returns the items, the address, the payment method, and the order summary (subtotal, shipping, taxes, estimated total). Fails on an empty cart, when the browser is not signed in to Walmart, when the account has no saved address or card, and when Walmart reports items unavailable for the address (it names them; remove them with Remove Walmart product from cart). Walmart sometimes refuses automated checkout steps with its "Robot or human?" check; the run then fails saying so, and it usually clears after a pause.
+Automatically check out Walmart cart on walmart.com. Check out your Walmart.com cart up to the review page, without ordering. It uses the account's preselected shipping address, or the store when the cart is set to pickup, and the saved payment method, confirming the address when Walmart asks for it. It returns the items, whether the order is delivered or picked up, the address or the pickup store, the payment method, and the order summary (subtotal, shipping, taxes, estimated total). Fails on an empty cart, when the browser is not signed in to Walmart, when the account has no saved address or card, and when Walmart reports items unavailable for the address (it names them; remove them with Remove Walmart product from cart). When Walmart keeps refusing the visit, the run fails saying so; retry later.
 
 - Site: walmart.com
 - Address: `reduck/walmart.com/checkout_cart`
-- Updated: 2026-10-27 (v2)
+- Updated: 2026-11-20 (v4)
 - Author: Reduck AI (reduck)
 
 ## Run it
@@ -25,18 +25,20 @@ It takes no input.
 - `stage` (string, required)
 - `lines` (array, optional)
 - `taxes` (string | null, optional): As Walmart shows it; can be Pending until the address is confirmed.
-- `address` (string | null, optional): Shipping address the checkout uses.
+- `address` (string | null, optional): Shipping address the checkout uses. Null for pickup.
 - `payment` (string | null, optional): Payment method the checkout uses, as Walmart names it (card type and last four digits).
 - `shipping` (string | null, optional): Shipping or below-minimum fee, when Walmart charges one.
 - `subtotal` (string | null, optional)
 - `contract_id` (string | null, optional): Walmart's id for this checkout.
+- `fulfillment` (string, optional): delivery when the order ships to the address, pickup when the cart is set to pickup at a store.
 - `order_total` (string | null, optional): Walmart's estimated total.
+- `pickup_store` (string | null, optional): For pickup: the store's name and address. Null for delivery.
 
 ## FAQ
 
 ### What does "Check out Walmart cart" do?
 
-Check out your Walmart.com cart up to the review page, without ordering. It uses the account's preselected shipping address and saved payment method, confirming the address when Walmart asks for it, and returns the items, the address, the payment method, and the order summary (subtotal, shipping, taxes, estimated total). Fails on an empty cart, when the browser is not signed in to Walmart, when the account has no saved address or card, and when Walmart reports items unavailable for the address (it names them; remove them with Remove Walmart product from cart). Walmart sometimes refuses automated checkout steps with its "Robot or human?" check; the run then fails saying so, and it usually clears after a pause.
+Check out your Walmart.com cart up to the review page, without ordering. It uses the account's preselected shipping address, or the store when the cart is set to pickup, and the saved payment method, confirming the address when Walmart asks for it. It returns the items, whether the order is delivered or picked up, the address or the pickup store, the payment method, and the order summary (subtotal, shipping, taxes, estimated total). Fails on an empty cart, when the browser is not signed in to Walmart, when the account has no saved address or card, and when Walmart reports items unavailable for the address (it names them; remove them with Remove Walmart product from cart). When Walmart keeps refusing the visit, the run fails saying so; retry later.
 
 ### How do I automatically check out Walmart cart on walmart.com?
 
@@ -52,7 +54,7 @@ Nothing. It takes no input.
 
 ### What does it return?
 
-It returns url, lines, stage, taxes, address, payment, shipping, subtotal, contract_id, order_total.
+It returns url, lines, stage, taxes, address, payment, shipping, subtotal, contract_id, fulfillment, order_total, pickup_store.
 
 ### Do I need to be logged in to walmart.com?
 

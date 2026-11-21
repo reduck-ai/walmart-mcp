@@ -1,10 +1,10 @@
 # Remove Walmart product from cart
 
-Automatically remove Walmart product from cart on walmart.com. Remove a product from your Walmart.com cart by item id, whatever its quantity, and return what is left in the cart (lines, item count, subtotal). A product that is not in the cart is reported as not present rather than failing. Walmart sometimes refuses automated cart changes with its "Robot or human?" check; the run then fails saying so, and it usually clears after a pause.
+Automatically remove Walmart product from cart on walmart.com. Remove a product from your Walmart.com cart by item id, whatever its quantity, and return what is left in the cart (lines, item count, subtotal). A product that is not in the cart, or an empty cart, is reported as not present rather than failing. When Walmart keeps refusing the visit, the run fails saying so; retry later.
 
 - Site: walmart.com
 - Address: `reduck/walmart.com/remove_from_cart`
-- Updated: 2026-10-27 (v2)
+- Updated: 2026-11-20 (v3)
 - Author: Reduck AI (reduck)
 
 ## Run it
@@ -31,7 +31,7 @@ npx @reduck-ai/cli@latest run --script reduck/walmart.com/remove_from_cart
 
 ### What does "Remove Walmart product from cart" do?
 
-Remove a product from your Walmart.com cart by item id, whatever its quantity, and return what is left in the cart (lines, item count, subtotal). A product that is not in the cart is reported as not present rather than failing. Walmart sometimes refuses automated cart changes with its "Robot or human?" check; the run then fails saying so, and it usually clears after a pause.
+Remove a product from your Walmart.com cart by item id, whatever its quantity, and return what is left in the cart (lines, item count, subtotal). A product that is not in the cart, or an empty cart, is reported as not present rather than failing. When Walmart keeps refusing the visit, the run fails saying so; retry later.
 
 ### How do I automatically remove Walmart product from cart on walmart.com?
 
